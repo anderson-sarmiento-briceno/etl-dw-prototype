@@ -1,0 +1,6 @@
+Nivel, LimiteInferior, LimiteSuperior, Calificacion
+a,0.9,1,SobreSaliente
+b,0.8,0.9,Aceptable
+c,0.7,0.8,Deficiente
+d,0.6,0.7,MuyDeficiente
+e,0,0.6,Inaceptable

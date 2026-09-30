@@ -1,0 +1,69 @@
+Code,OcppErrorCode,TipoNotificacion,Alarm,Source,Details,Suggested Action
+0,#N/D,Warning,NO ERROR,,,
+1,Other Error,Error,EMERGENCY,PLC,Emergency button pressed,Un-press the emergency button and reconnect
+2,Other Error,Error,DOOR,PLC,Cabinet door open,Confirm that door is closed properly
+3,Ground Failure,Error,ISOLATION FAULT,PLC,Isolation values between DC and Ground are below recommended values,Guarantee if fault is coming from the vehicle or the charger. Reconnect
+4,,Error,TEMPERATURE OUT OF RANGE,PLC,Internal temperature is outside of permitted range,it for the temperature to go back to permissible range
+5,High Temperature,Error,DC PLUS TEMPERATURE,PLC,Temperature at DC + contact of the plug is too high,Overheating can be caused by bad contact or degradation/damages to the plug
+6,High Temperature,Error,DC MINUS TEMPERATURE,PLC,Temperature at DC - contact of the plug is too high,Overheating can be caused by bad contact or degradation/damages to the plug
+7,,Error,INPUT VOLTAGE OUT OF RANGE,PLC,AC input voltage is outside permissible range,Guarantee that AC input values are according specification on product manual
+8,,Error,INPUT CURRENT OUT OF RANGE,PLC,AC input current is outside permissible range,Guarantee that AC input values are according specification on product manual
+9,Over Voltage,Error,HIGH OUTPUT VOLTAGE,PLC,DC output voltage is too high,"Reconnect. If failure remains, contact assistance"
+10,Over Current Failure,Error,HIGH OUTPUT CURRENT,PLC,DC output current is too high,"Reconnect. If failure remains, contact assistance"
+11,EV Communication Error,Error,CAN COMMUNICATION LOST(AU RONIK),PLC,Internal communication error,"Reconnect. If failure remains, contact assistance"
+12,Power Switch Failure,Error,CAN COMMUNICATION LOST(GI),PLC,Internal communication error,"Reconnect. If failure remains, contact assistance"
+13,Power Switch Failure,Error,AC CONTACTOR TIMEOUT,PLC,AC contactor is not closing/opening,Check AC contactors for damages or possible welding
+14,Power Switch Failure,Error,DC CONTACTOR TIMEOUT,PLC,AC contactor is not closing/opening,Check AC contactors for damages or possible welding
+15,EV Communication Error,Error,CP STATE FAULT,PLC,Control pilot state is not according IEC61851,"Check plug integrity. Reconnect. If failure remains, contact assistance"
+16,,Error,FREQUENCY OUT OF RANGE,PLC,AC input frequency is outside permissible range,Guarantee that AC input values are according specification on product manual
+17,No Error,Warning,HMI STOPCHARGE,PLC,Charge procedure stopped by user request (HMI),
+18,,Error,RESS TEMPERATURE INHIBIT,EV,Vehicle generated error,Vehicle generated error
+19,No Error,Warning,EV SHIFT POSITION,EV,Vehicle generated error,Vehicle generated error
+20,No Error,Warning,CHARGER CONNECTOR LOCK FAULT,EV,Vehicle generated error,Vehicle generated error
+21,No Error,Warning,EVRESS MALFUNCTION,EV,Vehicle generated error,Vehicle generated error
+22,No Error,Warning,CHARGING CURRENT DIFF,EV,Vehicle generated error,Vehicle generated error
+23,,Error,CHARGING VOLTAGE OUT OF RANGE,EV,Vehicle generated error,Vehicle generated error
+24,,Error,CHARGING SYSTEM INCOMPATIBILITY,EV,Vehicle generated error,Vehicle generated error
+25,Power Switch Failure,Error,DC LINK UNDER BALANCE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+26,Over Voltage,Error,DC LINK OVER VOLTAGE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+27,Under Voltage,Error,DC LINK UNDER VOLTAGE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+28,,Error,FREQUENCY DEVIATION,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+29,,Error,INVERTER IGBT DESATURATION,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+30,Over Voltage,Error,INPUT MAINS HIGH,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+31,,Error,INPUT MAINS LOW,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+32,,Error,INPUT MAINS CURRENT,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+33,,Error,RECTIFIER IGBT DESATURATION,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+34,Power Switch Failure,Error,START TIMEOUT,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+35,Power Switch Failure,Error,SHUTDOWN RETIFIER,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+36,,Error,OUTPUT SHORT CIRCUIT,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+37,,Error,OUTPUT OVERLOAD,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+38,,Error,OUTPUT OVER VOLTAGE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+39,,Error,OUTPUT UNDER VOLTAGE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+40,Power Switch Failure,Error,CAN COMMUNICATION TIMEOUT,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+41,Power Switch Failure,Error,INPUT CONTACTOR OFF,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+42,Power Switch Failure,Error,DC BUS PRECHARGE TIMEOUT,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+43,High Temperature,Error,OVER TEMPERATURE,Power Converter,Internal Power Converter error,"Reconnect. If failure remains, contact assistance"
+44,Other Error,Error,DISPENSER DOOR,Front End,Front End door is open,Confirm that door is closed properly
+45,,Error,OUTPUT FUSE PLUS BLOWN,Front End,Front End fuse is blown,Replace fuse
+46,,Error,OUTPUT FUSE MINUS BLOWN,Front End,Front End fuse is blown,Replace fuse
+47,Power Switch Failure,Error,OUTPUT CONTACTOR PLUS TIMEOUT,Front End,Contactor is not closing/opening,Check contactors for damages or possible welding
+48,Power Switch Failure,Error,OUTPUT CONTACTOR MINUS TIMEOUT,Front End,Contactor is not closing/opening,Check contactors for damages or possible welding
+49,Internal Error,Error,MODBUS COMMUNICATION LOST(CLIENT),Front End,Communication between Charger and Front End lost,Check connection
+50,Internal Error,Error,MODBUS COMMUNICATION LOST(SERVER),Front End,Communication between Charger and Front End lost,Check connection
+51,Power Switch Failure,Error,AC CONTACTOR ERROR,Front End,Contactor changed state unexpectedly,Check contactors for damages or possible welding
+52,Power Switch Failure,Error,DC CONTACTOR ERROR,Front End,Contactor changed state unexpectedly,Check contactors for damages or possible welding
+53,,Error,RESERVED,Front End,Error reserved for local emergency button (project specific),Un-press the emergency button and reconnect
+54,Internal Error,Error,DISPENSER TEMPERATURE,Front End,Internal Front End temperature is outside of permitted range,Wait for the temperature to go back to permissible range
+55,No Error,Warning,IOT DISCONNECTED,PLC,Internal communication error (charging is still possible),
+56,No Error,Warning,OCPP UNAVAILABLE,OCPP,Charger set as unavailable by OCPP server,
+57,No Error,Warning,SESSION SETUP FAILURE,PLC,"After TCP connection was established, session was not able to reach CableCheck",
+58,No Error,Warning,OCPP UNAUTHORIZED,OCPP,Charger was not authorized by OCPP server,
+59,,Error,RESERVED,CableReel,Error reserved for cable reel communication timeout (project specific),
+60,,Error,RESERVED,CableReel,Error reserved for cable reel timeout going up (project specific),
+61,,Error,RESERVED,CableReel,Error reserved for cable reel timeout going down (project specific),
+62,,Error,RESERVED,CableReel,Error reserved for cable reel mechanical failure (project specific),
+63,,Error,RESERVED,CableReel,Error reserved for cable reel sensor operating voltage (project specific,
+64,,Error,CAN COMMUNICATION LOST(LC PLUG),PLC,Internal communication error,"Reconnect. If failure remains, contact assistance"
+65,No Error,Warning,SLAC FAILURE,PLC,"Session could not establish a TCP connection, failed at SLAC",
+66,No Error,Warning,OCPP STOPCHARGE,OCPP,Charge procedure stopped by user request (OCPP),
+67,No Error,Warning,EV READY SHUTDOWN,EV,EV Ready signal was removed during CurrentDemand,
